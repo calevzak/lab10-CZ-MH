@@ -1,3 +1,6 @@
+# https://github.com/calevzak/lab10-CZ-MH.git
+# Partner 1: Calev Zak
+# Partner 2: Mitchel Horkheimer
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -11,9 +14,9 @@ def mul(a, b):
     return a*b
 
 def div(a, b):
-    if b == 0:
+    if a == 0:
         raise ZeroDivisionError("division by zero")
-    return a/b
+    return b/a
 
 def exp(a, b):
     return a**b
@@ -24,8 +27,6 @@ def square_root(a):
     return math.sqrt(a)
 
 def hypotenuse(a, b):
-    if a == 0 or b == 0:
-        raise ValueError("hypotenuse")
     return math.hypot(a, b)
 
 def add(a, b):
